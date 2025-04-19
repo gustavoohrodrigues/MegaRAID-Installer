@@ -31,7 +31,8 @@ Caso veja erro de permissão, execute:
 
 - chmod +x ./scripts/manager.sh
 
-#Opções Disponiveis: 
+
+# Opções Disponiveis: 
 
 | Opção | Descrição                       | Comando equivalente                     |
 |:-----:|---------------------------------|-----------------------------------------|
