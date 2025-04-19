@@ -15,6 +15,7 @@ Instalador automatizado para o utilitário MegaCLI (Broadcom/LSI), compatível c
 ## Como executar
 
 - bash
+
 chmod +x install-megaraid.sh
 ./install-megaraid.sh
 
