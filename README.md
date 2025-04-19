@@ -19,12 +19,6 @@ sudo chmod +x install-megaraid.sh
 
 ./install-megaraid.sh
 
-## Observações
-
--Testado exclusivamente em Ubuntu 22.04.
-
--O uso de alien pode não ser compatível com distribuições fora do ecossistema Debian.
-
 
 # 🛠️ Gerenciamento MegaRAID Interativo
 
@@ -36,3 +30,23 @@ Após feita a instalação, execute o gerenciador da controladora com o comando:
 Caso veja erro de permissão, execute:
 
 - chmod +x ./scripts/manager.sh
+
+#Opções Disponiveis: 
+
+| Opção | Descrição                       | Comando equivalente                     |
+|:-----:|---------------------------------|-----------------------------------------|
+| 1     | Lista discos físicos            | `MegaCli64 -PDList -aALL`               |
+| 2     | Verifica armazenamento total    | `MegaCli64 -LDInfo -Lall -aALL`         |
+| 3     | Estado dos arrays               | `MegaCli64 -ShowSummary -aALL`          |
+| 4     | Informações completas do RAID   | `MegaCli64 -AdpAllInfo -aALL`           |
+| 5     | Visualiza logs da controladora  | `MegaCli64 -FwTermLog -Dsply -aALL`     |
+
+## Observações
+
+-Testado exclusivamente em Ubuntu 22.04.
+
+-O uso de alien pode não ser compatível com distribuições fora do ecossistema Debian.
+
+
+
+
